@@ -18,7 +18,7 @@ var MongoClient = require('mongodb').MongoClient;
 var db;
 
 // setup mongo connection
-MongoClient.connect('process.env.MONGO_URL', function(err, database) {
+MongoClient.connect(process.env.MONGO_URL, function(err, database) {
 	if (err) {
 		throw err;
 	}
